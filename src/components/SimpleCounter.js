@@ -19,30 +19,31 @@ function SimpleCounter() {
               10 %{" "}
             </Progress>
           </Col>
-          <Col sm="9" className="">
-            <Row xs={3} className="justify-content-center align-items-center">
-              <Col className="text-end">
-                <Button
-                  className="bg-light text-dark border-0 custom-btn rounded-circle me-2"
-                  size="sm"
-                >
-                  <FaMinus />
-                </Button>{" "}
-                Decrement
-              </Col>
-              <Col sm="2">
-                <Input type="number" className="custom-form" max='100' maxLength='3' />
-              </Col>
-              <Col className="text-start">
-                <Button
-                  className="bg-light text-dark border-0 custom-btn rounded-circle me-2"
-                  size="sm"
-                >
-                  <FaPlus />
-                </Button>{" "}
-                Increment
-              </Col>
-            </Row>
+        </Row>
+        <Row xs={3} className="justify-content-center align-items-center">
+          <Col className="text-end">
+            <Button
+              className="bg-light text-dark border-0 custom-btn rounded-circle me-2"
+              size="sm"
+            >
+              <FaMinus />
+            </Button>
+          </Col>
+          <Col md="3" lg="1">
+            <Input
+              type="number"
+              className="custom-form mx-auto"
+              max="100"
+              maxLength="3"
+            />
+          </Col>
+          <Col className="text-start">
+            <Button
+              className="bg-light text-dark border-0 custom-btn rounded-circle me-2"
+              size="sm"
+            >
+              <FaPlus />
+            </Button>
           </Col>
         </Row>
       </Container>
